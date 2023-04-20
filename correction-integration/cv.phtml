@@ -1,0 +1,131 @@
+<?php
+
+   var_dump($_GET);
+    $nom = $_GET["nom"];
+    $prénom=$_GET["prenom"];
+    $email=$_GET["email"];
+    $telephone=$_GET["telephone"];
+    $linkedin=$_GET["linkedin"];
+    $github=$_GET["github"];
+    $biographie=$_GET["biographie"];
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            CV
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="cv" class="blue">
+        <header>
+            <h1><span><?php echo $nom ?></span> <?php echo $prénom ?></h1>
+            <h2>Intitulé du poste</h2>
+        </header>
+        <main>
+            <section id="left">
+                <h3>Informations</h3>
+                <section>
+                    <h4>
+                    
+                        contact
+                        
+                    
+                    </h4>
+                    <dl>
+                        <dt>
+                            Email
+                        </dt>
+                        <dd>
+                            <?php echo $email ?>
+                        </dd>
+                        <dt>
+                            Téléphone
+                        </dt>
+                        <dd>
+                            <?php echo $telephone ?>
+                        </dd>
+                        <dt>
+                            LinkedIn
+                        </dt>
+                        <dd>
+                            <a <?php echo $linkedin ?>> <?php $linkedin ?> </a>
+                        </dd>
+                        <dt>
+                            GitHub
+                        </dt>
+                        <dd>
+                            <a href=""> <?php echo $github ?> <?php $github ?></a>
+                        </dd>
+                    </dl>
+                </section>
+                <section>
+                    <h4>Biographie</h4>
+                    <p>
+                       <?php $biographie ?>
+                    </p>
+                </section>
+                <section>
+                    <h4>Loisirs</h4>
+                    <ul>
+                        <li>
+                            Jeux de stratégie
+                        </li>
+                        <li>
+                            Violon
+                        </li>
+                        <li>
+                            Roller Derby
+                        </li>
+                        <li>
+                            Voile
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="right">
+                <h3>Compétences</h3>
+                <section>
+                    <h4>Langages des programmation</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Frameworks & Librairies</h4>
+                    <ul>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                        <li>Symfony</li>
+                        <li>Laravel</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Logiciels</h4>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>XD</li>
+                        <li>Figma</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Langues</h4>
+                    <ul>
+                        <li>Anglais</li>
+                        <li>Français</li>
+                        <li>Arabe</li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

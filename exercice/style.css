@@ -1,0 +1,31 @@
+*{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Poppins',sans-serif;
+}
+
+body{
+    
+    
+}
+
+    
+ .form{
+  display: grid;
+  grid-template-colums: repeat(1fr, 1fr);
+}
+   
+
+
+.couleur{
+    
+    width:100%;
+    height:150px;
+    background-color:#3D5E80;
+    border:1px solid #3D5E80;
+}
+
+h3,h1,h2{
+    color:#3D5E80 ;
+}
